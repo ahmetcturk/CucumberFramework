@@ -12,8 +12,8 @@ public class ExampleFirstStepDefinition {
     }
 
     @When("This is {string}")
-    public void method2(){
-        System.out.println("This is when method2");
+    public void method2(String string){
+        System.out.println(string);
     }
 
     @Then("^This is Then$")

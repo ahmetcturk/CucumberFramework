@@ -1,6 +1,10 @@
 Feature: First Feature
-  Scenario: We are checking cucumber keywords
-    Given This is Given 45
-    When This is "When"
+  Scenario Outline: We are checking cucumber keywords
+    Given This is Given <numbers>
+    When This is "<strings>"
     Then This is Then
 
+  Examples:
+  |numbers| strings|
+  |   5   | Ahmet  |
+  |   5   | Ahmet  |

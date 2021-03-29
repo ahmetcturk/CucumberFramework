@@ -4,8 +4,8 @@ Feature: Checkout
     # Background : If we have a long setup or given before the test, we are breaking this given or setup operations into Background
   Background:
     Given user is actually successfully login
-
   Scenario Outline: Order Checkout
+
     When I click on item with name "<Item>"
     And I click on the ADD TO CART button
     And I click on the SHOPPING CART button
